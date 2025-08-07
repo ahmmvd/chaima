@@ -116,10 +116,13 @@ body {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 95vw;
+  overflow-x: auto;
   background-color: #222;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.015) 1px,
-      transparent 0);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 0);
   background-size: 7px 7px;
   background-position: -1px -1px;
   padding: 10px 20px;
@@ -127,6 +130,7 @@ body {
   z-index: 1000;
   transition: padding 0.3s ease-in-out;
 }
+
 
 .switch-button {
   background: none;
@@ -176,5 +180,19 @@ body {
   :root {
     --card-width: 300px;
     --card-height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --card-width: 260px;
+    --card-height: 370px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --card-width: 200px;
+    --card-height: 290px;
   }
 }

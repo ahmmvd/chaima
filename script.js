@@ -6,7 +6,7 @@ gsap.set(".switch", { opacity: 0, visibility: "hidden" });
 
 const CONFIG = {
   totalCards: 12,
-  wheelRadius: 35, // 35% of viewport (matching the basic implementation)
+  wheelRadius: 28, // 35% of viewport (matching the basic implementation)
   images: [
     "https://i.imgur.com/lziuDlL.jpeg",
     "https://i.imgur.com/W8vupuY.jpeg",
