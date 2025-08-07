@@ -182,17 +182,3 @@ body {
     --card-height: 400px;
   }
 }
-
-@media screen and (max-width: 768px) {
-  :root {
-    --card-width: 260px;
-    --card-height: 370px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  :root {
-    --card-width: 200px;
-    --card-height: 290px;
-  }
-}
