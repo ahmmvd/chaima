@@ -10,7 +10,7 @@
   --color-gray-5: #3a3a3a;
   --color-gray-6: #444444;
   --color-gray-7: #4a4a4a;
-  --color-gray-8: #ffe6f0;
+  --color-gray-8: #555555;
   --card-width: 430px;
   --card-height: 610px;
   --card-border-radius: 6px;
@@ -41,6 +41,7 @@ body {
       transparent 1px);
   background-size: 11px 11px;
 }
+
 
 .carousel-container {
   width: 100vw;
@@ -112,24 +113,21 @@ body {
 
 .switch {
   position: fixed;
-  bottom: env(safe-area-inset-bottom, 10px);
-  /* handles mobile safe areas */
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 16px;
-  background-color: rgba(34, 34, 34, 0.85);
-  /* semi-transparent background */
-  backdrop-filter: blur(8px);
-  border-radius: 12px;
+  gap: 20px;
+  background-color: #222;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.015) 1px,
+      transparent 0);
+  background-size: 7px 7px;
+  background-position: -1px -1px;
+  padding: 10px 20px;
+  border-radius: 4px;
   z-index: 1000;
-  max-width: 95vw;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  transition: padding 0.3s ease-in-out;
 }
-
 
 .switch-button {
   background: none;
